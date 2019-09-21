@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1e6eb"
+    tools:context="com.changwon.wooogi.frequency.VolumeCheck">
+
+    <!--<Button-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginTop="-47dp"-->
+        <!--android:layout_weight="0.83"-->
+        <!--android:background="@drawable/homebutton"-->
+        <!--app:layout_constraintBottom_toBottomOf="@id/checkguideline2"-->
+        <!--app:layout_constraintDimensionRatio="h,2:1.5"-->
+        <!--app:layout_constraintHorizontal_bias="1.0"-->
+        <!--app:layout_constraintLeft_toRightOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent" />-->
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="휴대폰의 볼륨을 최대로 설정해 주세요."
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.372"
+        tools:layout_conversion_absoluteHeight="23dp"
+        tools:layout_conversion_absoluteWidth="169dp"
+        tools:layout_conversion_absoluteX="95dp"
+        tools:layout_conversion_absoluteY="299dp" />
+
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentStart="true">-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/relativeLayout3"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="300dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:layout_marginStart="30dp"-->
+    <!--android:background="#ffffff">-->
+
+    <!--</RelativeLayout>-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/editTextVol"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="100sp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="150sp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignParentEnd="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginEnd="48dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginRight="48dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="100%"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="40sp" />&ndash;&gt;-->
+
+    <!--</RelativeLayout>-->
+
+
+    <!--<SeekBar-->
+    <!--android:id="@+id/seekBarVol"-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:rotation="270"-->
+    <!--android:thumb="@drawable/volumecontrolbutton"-->
+    <!--android:layout_marginRight="159dp"-->
+    <!--android:layout_marginEnd="159dp"-->
+    <!--android:layout_marginTop="121dp"-->
+    <!--android:layout_below="@+id/linearLayout"-->
+    <!--android:layout_alignRight="@+id/btn_start"-->
+    <!--android:layout_alignEnd="@+id/btn_start" />-->
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:background="@drawable/newbuttonnexton"
+        tools:layout_conversion_absoluteX="40dp"
+        tools:layout_conversion_absoluteY="483dp"
+        tools:layout_conversion_absoluteWidth="280dp"
+        tools:layout_conversion_absoluteHeight="50dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.827"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#323743"
+        android:weightSum="1"
+        app:layout_constraintBottom_toTopOf="@+id/checkguideline1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="140dp"
+        tools:layout_conversion_absoluteWidth="360dp"
+        tools:layout_conversion_absoluteX="0dp"
+        tools:layout_conversion_absoluteY="0dp"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="300dp"
+            android:layout_height="29.8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="최대 볼륨으로 맞춰주세요."
+            android:textColor="#ffffff"
+            android:textSize="17sp"/>
+
+    </LinearLayout>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkguideline1"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.11"
+        tools:layout_editor_absoluteY="62dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+</android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1e6eb"
+    tools:context="com.changwon.wooogi.frequency.MainTest">
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:id="@+id/card_view3"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_margin="10dp"-->
+    <!--app:cardCornerRadius="4dp">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:gravity="center">-->
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout1"
+        app:layout_constraintVertical_bias="0.119"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/starttext"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:text="검사를 시작 하실려면 아래 버튼을 눌러주세요."
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FrequencyValue"
+        app:layout_constraintVertical_bias="0.057"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginBottom="272dp" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/woogitest"-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="0"-->
+    <!--android:textSize="30sp"-->
+    <!--android:layout_alignBaseline="@+id/btn_left"-->
+    <!--android:layout_alignBottom="@+id/btn_left"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentStart="true" />-->
+
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:background="@drawable/newhearingbutton"
+        android:onClick="onClick"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/starttext"
+        app:layout_constraintVertical_bias="0.085" />
+
+
+    <!--</RelativeLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/LeftValue"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="10dp"-->
+        <!--android:text="왼쪽 db :"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:textColor="@color/secondary_text"-->
+        <!--android:textSize="15sp"-->
+        <!--tools:layout_constraintTop_creator="1"-->
+        <!--tools:layout_constraintRight_creator="1"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--tools:layout_constraintLeft_creator="1"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/textView5"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintVertical_bias="0.0" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/RightValue"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="10dp"-->
+        <!--android:text="오른쪽 db :"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:textColor="@color/secondary_text"-->
+        <!--android:textSize="15sp"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="1.0"-->
+        <!--app:layout_constraintLeft_toLeftOf="@+id/textView5"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/LeftValue"-->
+        <!--app:layout_constraintVertical_bias="0.0"-->
+        <!--tools:layout_constraintLeft_creator="1"-->
+        <!--tools:layout_constraintRight_creator="1"-->
+        <!--tools:layout_constraintTop_creator="1"-->
+        <!--android:layout_marginEnd="8dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/FrequencyValue"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="top|center"-->
+        <!--android:padding="10dp"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:textColor="@color/secondary_text"-->
+        <!--android:textSize="15sp"-->
+        <!--tools:layout_constraintTop_creator="1"-->
+        <!--tools:layout_constraintRight_creator="1"-->
+        <!--app:layout_constraintRight_toRightOf="@+id/LeftValue"-->
+        <!--tools:layout_constraintLeft_creator="1"-->
+        <!--app:layout_constraintLeft_toLeftOf="@+id/LeftValue"-->
+        <!--app:layout_constraintHorizontal_bias="0.0"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/RightValue"-->
+        <!--app:layout_constraintVertical_bias="0.0" />-->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#323743"
+        app:layout_constraintBottom_toTopOf="@+id/testguideline1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <TextView
+            android:id="@+id/testtitle"
+            android:layout_width="300dp"
+            android:layout_height="29.8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="자동 청력검사"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/testguideline1"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.11"
+        tools:layout_editor_absoluteY="62dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/testguideline2"
+        app:layout_constraintGuide_percent="0.34"
+        android:orientation="horizontal" />
+
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/myFAB"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/ic_play_arrow_white_24dp"-->
+    <!--app:elevation="4dp" />-->
+
+</android.support.constraint.ConstraintLayout>
