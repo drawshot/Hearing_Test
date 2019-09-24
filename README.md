@@ -9,6 +9,8 @@
 본 프로젝트는 이러한 난청 환자들을 위한 청력검사 앱 제작을 목표로 한다.
 <br />
 <img width="743" alt="스크린샷 2019-09-21 오후 4 12 14" src="https://user-images.githubusercontent.com/26424846/65369642-a8f90380-dc8a-11e9-8bcf-29b14c5327ea.png">
+<br />
+<br />
 순음(Pure Tone)을 발생시키기 위해서 먼저 Sine Wave의 PCM Data를 만든다.
 <br />
 발생하려고 하는 순음의 주파수는 44K의 샘플율(Sample Rate)과 Duration을 통해서 결정이 되며, 순음의 음압레벨은 음압레벨-Amp 테이블을 통해서 얻어진 Amp값을 이용한다.
@@ -25,6 +27,8 @@
 <br />
 <br />
 <img width="601" alt="스크린샷 2019-09-21 오후 4 19 58" src="https://user-images.githubusercontent.com/26424846/65369716-bd89cb80-dc8b-11e9-90f7-6ed1aefc2600.png">
+<br />
+<br />
 청력검사 알고리즘은 위 그림과 같으며, 주파수의 순서는 1000Hz, 2000Hz, 3000Hz, 4000Hz, 8000Hz, 1000Hz, 500Hz, 250Hz, 125Hz 순으로 시행
 하강법과 상승법이 섞인 혼합법(Mixed method)로 청력검사 실시
 * 정상적인 청력을 가진 평균의 인간이 들을 수 있는 소리인 30dB HL(최소가청역치)를 검사 기준으로 삼고 오차 값을 더하여 데시벨을 출력
@@ -39,3 +43,6 @@
 * 안드로이드 롤리팝 이상 지원
 
 ### 사용 예제
+![hearing_test1](https://user-images.githubusercontent.com/26424846/65490117-87488800-dee7-11e9-808a-3d60a94ceba3.jpg)
+![hearing_test2](https://user-images.githubusercontent.com/26424846/65490147-94fe0d80-dee7-11e9-9dcf-3ecc08931492.jpg)
+
